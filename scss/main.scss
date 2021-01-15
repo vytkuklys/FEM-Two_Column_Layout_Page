@@ -1,0 +1,28 @@
+@import 'config';
+@import 'nav';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: $Font-open;
+}
+
+main{
+    width: 100%;
+}
+
+.get-started{
+    display: grid;
+    grid-template-rows: 1fr;
+
+    &__img{
+       width: 100%;
+    }
+    
+}
