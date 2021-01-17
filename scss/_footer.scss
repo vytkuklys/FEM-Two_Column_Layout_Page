@@ -1,0 +1,81 @@
+footer{
+    background-color: $Primary-color;
+    color: $Neutral-blue;
+    text-align: left;
+    width: 100%;
+
+    .wrapper{
+        text-align: left;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .footer-contact{
+        img{
+            padding: 1rem 0;
+        }
+        p{
+            line-height: 2rem;
+
+            
+            &::before{
+                content: url(../images/icon-phone.svg);
+                padding-right: 1rem;
+            }
+            &:last-child::before{
+                content: url(../images/icon-email.svg);
+            }
+        }
+        
+    }
+    ul{
+        margin: 2.5rem 0;
+    
+        & li{
+            line-height: 2rem;
+
+            a{
+                text-decoration: none;
+                color: $Neutral-blue
+                
+            }
+            a:hover{
+                color: $Primary-accent;
+            }
+
+        }
+    }
+
+    .social-icons{
+        color: $Neutral-blue;
+        text-align: center;
+
+        a{
+            color: $Neutral-blue;
+            border: .1rem solid $Neutral-blue;
+            padding: .5rem 1.15rem;
+            border-radius: 50%;
+            margin-right: .75rem;
+            position: relative;
+
+            .fa-twitter, .fa-facebook-f, .fa-instagram{
+                position: absolute;
+                top: .7rem;
+            }
+
+            .fa-twitter{
+                left: .7rem;
+            }
+            .fa-facebook-f{
+                left: .8rem;
+            }
+            .fa-instagram{
+                left: .68rem;
+            }
+
+            &:hover{
+                color: $Primary-accent;
+                border-color: $Primary-accent;
+            }
+        }
+    }
+}

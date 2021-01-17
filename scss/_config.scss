@@ -2,12 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 $Primary-color: hsl(243, 87%, 12%);
-$Seconday-color: hsl(238, 22%, 44%);
+$Secondary-color: hsl(238, 22%, 44%);
 $Primary-accent: hsl(224, 93%, 58%);
 $Secondary-accent: hsl(170, 45%, 43%);
 $Neutral-blue: hsl(240, 75%, 98%);
 $Neutral-gray: hsl(0, 0%, 75%);
+$Neutral-red: rgb(250, 140, 140);
 $Font-raleway: 'Raleway', sans-serif;
 $Font-open: 'Open Sans', sans-serif;
 
 // ### Headings, Call-to-actions, Header Navigation
+
+@mixin media-s{
+    @media screen and (min-width: 600px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
