@@ -29,8 +29,3 @@ $Font-open: 'Open Sans', sans-serif;
         @content;
     }
 }
-@mixin media-xl{
-    @media screen and (min-width: 1600px){
-        @content;
-    }
-}
