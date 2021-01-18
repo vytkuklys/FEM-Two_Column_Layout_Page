@@ -98,6 +98,7 @@ footer .social-icons div {
   border-radius: 50%;
   margin-right: .75rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 footer .social-icons div .fa-twitter, footer .social-icons div .fa-facebook-f, footer .social-icons div .fa-instagram {
