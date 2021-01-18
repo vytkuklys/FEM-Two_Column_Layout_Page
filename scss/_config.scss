@@ -11,8 +11,6 @@ $Neutral-red: rgb(250, 140, 140);
 $Font-raleway: 'Raleway', sans-serif;
 $Font-open: 'Open Sans', sans-serif;
 
-// ### Headings, Call-to-actions, Header Navigation
-
 @mixin media-s{
     @media screen and (min-width: 600px){
         @content;

@@ -90,33 +90,23 @@ footer .social-icons {
   text-align: center;
 }
 
-footer .social-icons a {
+footer .social-icons div {
   color: #f6f6fe;
   border: 0.1rem solid #f6f6fe;
-  padding: .5rem 1.15rem;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   margin-right: .75rem;
-  position: relative;
+  display: inline-block;
 }
 
-footer .social-icons a .fa-twitter, footer .social-icons a .fa-facebook-f, footer .social-icons a .fa-instagram {
-  position: absolute;
-  top: .7rem;
+footer .social-icons div .fa-twitter, footer .social-icons div .fa-facebook-f, footer .social-icons div .fa-instagram {
+  font-size: .8rem;
+  text-align: left;
+  vertical-align: middle;
 }
 
-footer .social-icons a .fa-twitter {
-  left: .7rem;
-}
-
-footer .social-icons a .fa-facebook-f {
-  left: .8rem;
-}
-
-footer .social-icons a .fa-instagram {
-  left: .68rem;
-}
-
-footer .social-icons a:hover {
+footer .social-icons div:hover {
   color: #3065f8;
   border-color: #3065f8;
 }
@@ -126,7 +116,7 @@ footer .social-icons a:hover {
     max-width: 40rem;
   }
   footer .wrapper img {
-    padding: 1rem 0;
+    padding: 3rem 0 1rem;
   }
   footer .wrapper .footer--grid {
     display: -ms-grid;
@@ -140,17 +130,27 @@ footer .social-icons a:hover {
   footer .wrapper .social-icons {
     text-align: left;
   }
+  footer .wrapper .social-icons .fa-twitter, footer .wrapper .social-icons .fa-facebook-f, footer .wrapper .social-icons .fa-instagram {
+    font-size: .8rem;
+    vertical-align: top;
+    margin-top: .45rem;
+    margin-left: .4rem;
+  }
+  footer .wrapper .social-icons .fa-facebook-f {
+    margin-left: .5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   header {
     width: 92.5%;
     max-width: 1325px;
-    margin: 2.5% auto 5%;
+    margin: 4% auto 5%;
     padding: 0;
   }
   header ul a {
-    margin: 1rem 0 0 2rem;
+    margin: 1rem 0 0 2.5rem;
+    font-weight: 400;
   }
   .get-started .wrapper {
     -ms-grid-columns: (1fr)[2];
@@ -186,7 +186,7 @@ footer .social-icons a:hover {
     direction: rtl;
   }
   .sharing .wrapper .sharing__img {
-    width: 100%;
+    width: 90%;
     margin-top: 10%;
   }
   .sharing .wrapper .sharing__div {
@@ -200,10 +200,10 @@ footer .social-icons a:hover {
     margin: 0 0 2.5%;
   }
   .sharing .wrapper .sharing__div a {
-    line-height: 3.5rem;
+    line-height: 2rem;
   }
   .sharing .wrapper figure {
-    margin: 7.5% 0 17.5%;
+    margin: 7.5% 0 15%;
   }
   .early-access {
     padding: 5rem 0;
@@ -226,14 +226,14 @@ footer .social-icons a:hover {
     padding-bottom: .75%;
   }
   .early-access .wrapper .early-access__input {
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
   .early-access .wrapper .early-access__input input {
     max-width: 90%;
   }
   .early-access .wrapper .early-access__input button {
     max-width: 40%;
-    min-width: 10rem;
+    min-width: 11rem;
   }
   footer .wrapper {
     padding: 2.5rem 0;
@@ -243,7 +243,7 @@ footer .social-icons a:hover {
         grid-template-columns: repeat(4, auto);
   }
   footer .wrapper .footer--grid .social-icons {
-    margin-top: 1rem;
+    margin-top: .25rem;
   }
   body .wrapper {
     max-width: 92%;
@@ -254,13 +254,18 @@ footer .social-icons a:hover {
 
 @media screen and (min-width: 1024px) {
   .get-started .wrapper img {
-    padding: 2.5% 0 0 .5rem;
+    padding: 1.5% 0 0 .5rem;
   }
   .get-started .wrapper p {
-    max-width: 90%;
+    max-width: 85%;
   }
   .get-started .wrapper h1 {
     max-width: 90%;
+    line-height: 3.5rem;
+    padding: 7.5% 0 2.5%;
+  }
+  .sharing h2 {
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
   }
   body .wrapper {
     width: 92%;
@@ -316,7 +321,7 @@ ul {
 .get-started__div h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.8rem, 3.25vw, 2.25rem);
+  font-size: clamp(1.8rem, 3.25vw, 2.35rem);
   line-height: 2.5rem;
   padding: 2.5% 0 5%;
 }
@@ -391,7 +396,7 @@ ul {
 .sharing__div h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.4rem, 2.75vw, 2.25rem);
   line-height: 2rem;
   padding: 2.5% 0 5%;
   text-align: center;
@@ -400,7 +405,7 @@ ul {
 
 .sharing__div p {
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
   text-align: left;
 }
 
@@ -433,8 +438,8 @@ ul {
   background-color: #fff;
   padding: 3rem 1rem 1rem 1.5rem;
   border-radius: .25rem;
-  -webkit-box-shadow: 0px 0px 10px 1px #bfbfbf;
-          box-shadow: 0px 0px 10px 1px #bfbfbf;
+  -webkit-box-shadow: 0px 0px 10px 0px #bfbfbf;
+          box-shadow: 0px 0px 10px 0px #bfbfbf;
 }
 
 .sharing__div figure .quote {

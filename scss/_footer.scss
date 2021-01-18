@@ -49,29 +49,20 @@ footer{
         color: $Neutral-blue;
         text-align: center;
 
-        a{
+        div{
             color: $Neutral-blue;
             border: .1rem solid $Neutral-blue;
-            padding: .5rem 1.15rem;
+            width: 1.75rem;
+            height: 1.75rem;
             border-radius: 50%;
             margin-right: .75rem;
-            position: relative;
+            display: inline-block;
 
             .fa-twitter, .fa-facebook-f, .fa-instagram{
-                position: absolute;
-                top: .7rem;
+                font-size: .8rem;
+                text-align: left;
+                vertical-align: middle;
             }
-
-            .fa-twitter{
-                left: .7rem;
-            }
-            .fa-facebook-f{
-                left: .8rem;
-            }
-            .fa-instagram{
-                left: .68rem;
-            }
-
             &:hover{
                 color: $Primary-accent;
                 border-color: $Primary-accent;
